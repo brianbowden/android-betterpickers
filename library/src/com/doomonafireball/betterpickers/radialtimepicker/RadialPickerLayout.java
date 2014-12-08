@@ -18,10 +18,9 @@ package com.doomonafireball.betterpickers.radialtimepicker;
 
 import com.doomonafireball.betterpickers.HapticFeedbackController;
 import com.doomonafireball.betterpickers.R;
-import com.nineoldandroids.animation.AnimatorSet;
-import com.nineoldandroids.animation.ObjectAnimator;
-import com.nineoldandroids.view.ViewHelper;
 
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.Resources;
@@ -544,12 +543,12 @@ public class RadialPickerLayout extends FrameLayout implements OnTouchListener {
             mTransition.playTogether(anims);
             mTransition.start();
         } else {
-            int hourAlpha = (index == HOUR_INDEX) ? 255 : 0;
-            int minuteAlpha = (index == MINUTE_INDEX) ? 255 : 0;
-            ViewHelper.setAlpha(mHourRadialTextsView, hourAlpha);
-            ViewHelper.setAlpha(mHourRadialSelectorView, hourAlpha);
-            ViewHelper.setAlpha(mMinuteRadialTextsView, minuteAlpha);
-            ViewHelper.setAlpha(mMinuteRadialSelectorView, minuteAlpha);
+            float hourAlpha = (index == HOUR_INDEX) ? 1f : 0f;
+            float minuteAlpha = (index == MINUTE_INDEX) ? 1f : 0f;
+            mHourRadialTextsView.setAlpha(hourAlpha);
+            mHourRadialSelectorView.setAlpha(hourAlpha);
+            mMinuteRadialTextsView.setAlpha(minuteAlpha);
+            mMinuteRadialSelectorView.setAlpha(minuteAlpha);
         }
 
     }

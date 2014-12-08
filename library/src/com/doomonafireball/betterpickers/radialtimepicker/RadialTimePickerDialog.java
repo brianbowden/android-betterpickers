@@ -20,8 +20,8 @@ import com.doomonafireball.betterpickers.HapticFeedbackController;
 import com.doomonafireball.betterpickers.R;
 import com.doomonafireball.betterpickers.Utils;
 import com.doomonafireball.betterpickers.radialtimepicker.RadialPickerLayout.OnValueSelectedListener;
-import com.nineoldandroids.animation.ObjectAnimator;
 
+import android.animation.ObjectAnimator;
 import android.app.ActionBar.LayoutParams;
 import android.content.DialogInterface;
 import android.content.res.ColorStateList;

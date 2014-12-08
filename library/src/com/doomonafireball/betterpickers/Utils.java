@@ -16,11 +16,14 @@
 
 package com.doomonafireball.betterpickers;
 
-import com.nineoldandroids.animation.Keyframe;
-import com.nineoldandroids.animation.ObjectAnimator;
-import com.nineoldandroids.animation.PropertyValuesHolder;
-import com.nineoldandroids.view.animation.AnimatorProxy;
+//import com.nineoldandroids.animation.Keyframe;
+//import com.nineoldandroids.animation.ObjectAnimator;
+//import com.nineoldandroids.animation.PropertyValuesHolder;
+//import com.nineoldandroids.view.animation.AnimatorProxy;
 
+import android.animation.Keyframe;
+import android.animation.ObjectAnimator;
+import android.animation.PropertyValuesHolder;
 import android.annotation.SuppressLint;
 import android.os.Build;
 import android.text.format.Time;
@@ -135,7 +138,7 @@ public class Utils {
         PropertyValuesHolder scaleY = PropertyValuesHolder.ofKeyframe("scaleY", k0, k1, k2, k3);
         ObjectAnimator pulseAnimator =
                 ObjectAnimator.ofPropertyValuesHolder(
-                        AnimatorProxy.NEEDS_PROXY ? AnimatorProxy.wrap(labelToAnimate) : labelToAnimate, scaleX,
+                        labelToAnimate, scaleX,
                         scaleY);
         pulseAnimator.setDuration(PULSE_ANIMATOR_DURATION);
 

@@ -20,8 +20,8 @@ import com.doomonafireball.betterpickers.HapticFeedbackController;
 import com.doomonafireball.betterpickers.R;
 import com.doomonafireball.betterpickers.Utils;
 import com.doomonafireball.betterpickers.calendardatepicker.MonthAdapter.CalendarDay;
-import com.nineoldandroids.animation.ObjectAnimator;
 
+import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.content.res.Resources;
 import android.os.Bundle;
