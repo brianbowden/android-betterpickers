@@ -8,6 +8,7 @@
 .DS_STORE
 .classpath
 .settings/
+library/build/
 bin/
 gen/
 local.properties
